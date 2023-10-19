@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/Spct.css" />
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
+        var headerHeight = 50;
+
+        if (window.pageYOffset > headerHeight) {
+          navbar.classList.add("navbar-fixed");
+        } else {
+          navbar.classList.remove("navbar-fixed");
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const buttons = document.querySelectorAll('.list-btn .btn');
+        buttons.forEach(button => {
+          button.addEventListener('click', () => {
+            buttons.forEach(btn => {
+              btn.classList.remove('btn-active');
+              btn.classList.add('btn');
+            });
+            button.classList.remove('btn');
+            button.classList.add('btn-active');
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-left">
+          <figure class="navbar-left__logo">
+            <a href="/trangchu.html"><img src="/assets/images/Logonew.png" alt="logo" /></a>
+          </figure>
+          <a href="/Doanh Muc all.html"><p class="navbar-left__title">SS23 COLLECTION</p></a>
+          <a href="/Doanh Muc all.html"><p class="navbar-left__title">SHOP ALL</p></a>
+          <a href="/Doanh Muc 1.html"><p class="navbar-left__title">TOPS</p></a>
+          <a href="/Doanh Muc 4.html"><p class="navbar-left__title">BOTTOMS</p></a>
+          <a href="/Doanh Muc 5.html"><p class="navbar-left__title">OUTERWEAR</p></a>
+          <a href="/No sp.html"><p class="navbar-left__title">FOOTWEAR</p></a>
+          <a href="/No sp.html"><p class="navbar-left__title">HAT</p></a>
+          <a href="/No sp.html"><p class="navbar-left__title">BAGS</p></a>
+          <a href="/No sp.html"><p class="navbar-left__title">SALE</p></a>
+        </div>
+        <div class="navbar-right">
+          <a href="/Dang nhap.html"><p class="navbar-left__title">ĐĂNG NHẬP / ĐĂNG KÝ</p></a>
+          <input type="text" placeholder="Tìm kiếm">
+          <p class="navbar-left__title">GIỎ HÀNG (0)</p>
+          <div class="dropdown">VI</div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="cart">
+        <div class="cart-list">
+          <div class="cart-item">
+            <div class="cart-layout">
+              <figure class="cart-img">
+                <img src="assets/images/ANGEL FALLING TEE 1.png" alt="top" />
+              </figure>
+              <div class="layout-info">
+                <div class="title">
+                  <p class="title">ANGEL FALLING TEE</p>
+                </div>
+                <div class="alt">
+                  <P class="alt">490.000đ</P>
+                </div>
+                <div class="info">
+                  <p class="text-info">THÔNG TIN</p>
+                  <p class="text-info">Thiết kế "best-seller"</p>
+                  <p class="text-info">Họa tiết trên áo được in kéo lụa</p>
+                  <p class="text-info">Chất liệu thoáng mát và giữ form</p>
+                  <p class="text-info">Chất liệu: Cotton 2 chiều</p>
+                </div>
+                <div class="info">
+                  <p class="text-info">Vận chuyển từ 2-3 ngày</p>
+                  <p class="text-info">Thiết kế và sản xuất bởi HADES.</p>
+                </div>
+                <div class="order">
+                  <p class="order">kích thước</p>
+                <div class="list-btn">
+                  <div class="btn btn-active">S</div>
+                  <div class="btn">M</div>
+                  <div class="btn">L</div>
+                  <div class="btn">XL</div>
+                </div>
+                  <div class="btn-add">
+                    THÊM VÀO GIỎ
+                  </div>
+                  <div class="btn-buy">MUA NGAY</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-footer">
+        <p class="container-footer__title">HỆ THỐNG CỬA HÀNG HADES</p>
+        <p class="container-footer__text">
+          HADES STUDIO FLAGSHIP STORE: 69 QUANG TRUNG STREET, GO VAP DISTRICT,
+          HOCHIMINH
+        </p>
+        <p class="container-footer__text">
+          Store 2: 26 LY TU TRONG STREET, DISTRICT 1, HOCHIMINH
+        </p>
+        <p class="container-footer__text">
+          Store 3: 350 DIEN BIEN PHU STREET, WARD 7, BINH THANH DISTRICT,
+          HOCHIMINH
+        </p>
+        <p class="container-footer__text">
+          Store 4: 140 NGUYEN HY QUANG, DONG DA DISTRICT, HANOI.
+        </p>
+        <p class="container-footer__text">
+          Store 5: 4 PHAM NGU LAO STREET, DISTRICT 1, HOCHIMINH.
+        </p>
+        <p class="container-footer__text">
+          Store 6: 136 NGUYEN HONG DAO STREET, TAN BINH DISTRICT, HOCHIMINH.
+        </p>
+        <p class="container-footer__text">
+          Store 7: 56 MAU THAN, NINH KIEU DISTRICT, CANTHO.
+        </p>
+      </div>
+      <div class="container-footer">
+        <p class="container-footer__title">CHÍNH SÁCH</p>
+        <p class="container-footer__text">- Chính sách sử dụng</p>
+        <p class="container-footer__text">- Phương thức thanh toán</p>
+        <p class="container-footer__text">- Chính sách đổi trả</p>
+        <p class="container-footer__text">- Chính giao nhận - vận chuyển</p>
+        <p class="container-footer__text">- Điều khoản dịch vụ</p>
+        <p class="container-footer__text">- Hướng dẫn đổi trả</p>
+        <p class="container-footer__text">- Chính sách bảo mật</p>
+      </div>
+      <div class="container-footer">
+        <p class="container-footer__title">THÔNG TIN LIÊN HỆ</p>
+        <p class="container-footer__text">
+          - CÔNG TY TNHH HADES Địa chỉ: 147 Bùi Đình Tuý, Phường 24, Bình Thạnh,
+          Thành phố Hồ Chí Minh
+        </p>
+        <p class="container-footer__text">- CSKH: 02873011021 (10h -18h)</p>
+        <p class="container-footer__text">- cấp: 20/07/2020</p>
+        <p class="container-footer__text">- Tuyển dụng: hr@hades.vn</p>
+        <p class="container-footer__text">- Website: hades.vn</p>
+        <p class="container-footer__text">- For business: contact@hades.vn</p>
+      </div>
+      <div class="container-footer">
+        <p class="container-footer__title">FOLLOW US ON SOCIAL MEDIA</p>
+        <div class="list-logo">
+          <figure class="logo-footer">
+            <img src="../assets/images/fb.png" alt="facebook" />
+          </figure>
+          <figure class="logo-footer">
+            <img src="../assets/images/ins.png" alt="instagram" />
+          </figure>
+          <figure class="logo-footer">
+            <img src="../assets/images/tiktok.png" alt="tiktok" />
+          </figure>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
